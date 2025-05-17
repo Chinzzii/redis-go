@@ -4,7 +4,7 @@
 FROM golang:1.23.5-alpine AS builder
 
 # Install git (needed if any modules are pulled from git repos)
-RUN apk add --no-cache git
+RUN apk add --no-cache netcat-openbsd git
 
 WORKDIR /app
 
